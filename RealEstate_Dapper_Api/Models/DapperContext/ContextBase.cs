@@ -6,6 +6,6 @@ namespace RealEstate_Dapper_Api.Models.DapperContext
     {
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;
-        public IDbConnection CreateConnection => new SqlConnection
+        public IDbConnection CreateConnection => new SqlConnection();
     }
 }
