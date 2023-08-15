@@ -1,5 +1,16 @@
-﻿appsetting json
-
+﻿appsetting json dosyasi:
+--------------------------
 "ConnectionStrings": {
     "Connection": "Server=DESKTOP-NVPFKAI\\SQLEXPRESS;initial Catalog=DbDapperRealEstate;integrated Security=true"
   },
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Programcs dosyasi :
+---------------------
+AddSingleton, AddScoped ve AddTransient, ASP.NET Core framework'ünün hizmet (service) bağımlılıklarını yönetmek için kullandığı üç farklı servis ömür döngüsünü belirtmek için kullanılan metodlardır. Bu metodlar, hizmetlerin nasıl oluşturulup yönetileceğini belirlemeye yardımcı olurlar.
+
+1-AddSingleton: Bu metot, uygulama yaşam döngüsü boyunca yalnızca bir örnek oluşturarak hizmetin tek bir örneğini paylaşır. Bu demek oluyor ki, ilk talep geldiğinde hizmet bir kere oluşturulur ve bundan sonraki tüm talepler aynı örneği kullanır. Bu genellikle uygulama genelinde aynı nesneye erişimin gerektiği durumlarda kullanılır.
+
+2-AddScoped: Bu metot, her HTTP isteği başına bir hizmet örneği oluşturur. Yani her HTTP isteği için farklı bir hizmet örneği oluşturulur ve bu istek süresince bu örnek kullanılır. İstek sonlandığında örnek değişken çöp toplama tarafından temizlenir. Bu yöntem, genellikle HTTP isteklerine özgü verileri taşıyan hizmetlerde kullanılır.
+
+3-AddTransient: Bu metot, her talep için yeni bir örnek oluşturur. Yani her talep geldiğinde yeni bir hizmet örneği oluşturulur ve talep sonlandığında bu örnek temizlenir. Bu yöntem, her talep için ayrı ayrı örneklerin gerektiği durumlarda kullanılır.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
