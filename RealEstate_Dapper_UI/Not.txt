@@ -1,8 +1,8 @@
 ﻿appsetting json dosyasi:
 --------------------------
-"ConnectionStrings": {
-    "Connection": "Server=DESKTOP-NVPFKAI\\SQLEXPRESS;initial Catalog=DbDapperRealEstate;integrated Security=true"
-  },
+ "ConnectionStrings": {
+    "connection": "Server=DESKTOP-NVPFKAI\\SQLEXPRESS;initial Catalog=DbDapperRealEstate;integrated Security=true;TrustServerCertificate=True;"
+  }
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 Programcs dosyasi :
 ---------------------
